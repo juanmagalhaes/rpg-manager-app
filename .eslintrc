@@ -1,0 +1,9 @@
+{
+  "extends": "react-app",
+  "globals": {
+    "shallow": false,
+    "render": false,
+    "mount": false
+  }
+}
+
