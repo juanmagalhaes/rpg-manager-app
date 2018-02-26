@@ -8,10 +8,10 @@ exports[`Character 1`] = `
     src="http://path-to-avatar"
   />
   <sumary
-    className="characterStatus"
+    className="status"
   >
     <p
-      className="hideOnMedium characterPlayer"
+      className="hideOnMedium player"
     >
       <strong>
         Player
