@@ -1,10 +1,11 @@
 @import "~styles/variables";
 
 .character {
-  display: flex;
   box-sizing: border-box;
   border: 1px solid black;
-  &Status {
+  display: flex;
+
+  .status {
     flex: 1;
     padding: $spacer;
     & > p {
@@ -20,7 +21,8 @@
       margin-right: $spacer * 2;
     }
   }
-  &Player {
-    float: right;
-  }
+}
+
+.player {
+  float: right;
 }

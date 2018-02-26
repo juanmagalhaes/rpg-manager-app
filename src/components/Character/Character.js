@@ -12,8 +12,8 @@ export default function Character(props: Props) {
   return (
     <section className={styles.character}>
       <Avatar src={props.avatar} />
-      <sumary className={styles.characterStatus}>
-        <p className={`${screen.hideOnMedium} ${styles.characterPlayer}`}>
+      <sumary className={styles.status}>
+        <p className={`${screen.hideOnMedium} ${styles.player}`}>
           <strong>Player</strong>: {props.player}
         </p>
         <p>
