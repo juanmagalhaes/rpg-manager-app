@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main 1`] = `
+<div
+  className="main"
+>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/dashboard"
+    />
+    <Redirect
+      from="/"
+      push={false}
+      to="/dashboard"
+    />
+  </Switch>
+</div>
+`;

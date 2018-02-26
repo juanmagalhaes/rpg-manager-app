@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar 1`] = `
+<picture
+  className="avatar"
+>
+  <img
+    alt="Character avatar."
+    className="portrait"
+    src="someAvatar.png"
+  />
+</picture>
+`;
+
+exports[`Default Avatar 1`] = `
+<picture
+  className="defaultAvatar"
+>
+  <img
+    alt="Character avatar."
+    className="portrait"
+    src="default-avatar.png"
+  />
+</picture>
+`;

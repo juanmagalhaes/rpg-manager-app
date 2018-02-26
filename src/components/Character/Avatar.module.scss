@@ -1,0 +1,55 @@
+@import "~styles/variables";
+
+.defaultAvatar {
+  overflow: hidden;
+  position: relative;
+  width: $spacer * 15;
+  height: $spacer * 15;
+  border-right: 1px solid black;
+  @media screen and (max-width: $break-small) {
+    width: $spacer * 10;
+    height: $spacer * 10;
+  }
+  & > img {
+    position: absolute;
+    width: $spacer * 15;
+    height: $spacer * 15;
+    transform: translate(0%, 0%);
+    @media screen and (max-width: $break-small) {
+      width: $spacer * 10;
+      height: $spacer * 10;
+    }
+  }
+}
+
+.avatar {
+  overflow: hidden;
+  position: relative;
+  width: $spacer * 15;
+  height: $spacer * 15;
+  box-sizing: border-box;
+  border-right: 1px solid black;
+  @media screen and (max-width: $break-small) {
+    width: $spacer * 10;
+    height: $spacer * 10;
+  }
+  & > img {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    height: 100%;
+    width: auto;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: $break-small) {
+      top: 120%;
+    }
+    &.portrait {
+      width: 100%;
+      height: auto;
+      @media screen and (max-width: $break-small) {
+        width: 150%;
+        height: auto;
+      }
+    }
+  }
+}

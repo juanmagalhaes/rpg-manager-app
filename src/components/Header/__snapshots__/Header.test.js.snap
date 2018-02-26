@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header 1`] = `
+<nav
+  className="header"
+>
+  <ul>
+    <li>
+      <Logo />
+    </li>
+    <li
+      className="right"
+    >
+      <a>
+        New Game
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

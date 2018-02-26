@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard 1`] = `
+<Scrollbars
+  autoHeight={false}
+  autoHeightMax={200}
+  autoHeightMin={0}
+  autoHide={true}
+  autoHideDuration={200}
+  autoHideTimeout={1000}
+  hideTracksWhenNotNeeded={false}
+  renderThumbHorizontal={[Function]}
+  renderThumbVertical={[Function]}
+  renderTrackHorizontal={[Function]}
+  renderTrackVertical={[Function]}
+  renderView={[Function]}
+  tagName="div"
+  thumbMinSize={30}
+  universal={false}
+>
+  <ul
+    className="dashboard"
+  >
+    <li
+      key="1"
+    >
+      <Game
+        gameId={1}
+      />
+    </li>
+    <li
+      key="2"
+    >
+      <Game
+        gameId={2}
+      />
+    </li>
+    <li
+      key="3"
+    >
+      <Game
+        gameId={3}
+      />
+    </li>
+    <li
+      key="4"
+    >
+      <Game
+        gameId={4}
+      />
+    </li>
+  </ul>
+</Scrollbars>
+`;

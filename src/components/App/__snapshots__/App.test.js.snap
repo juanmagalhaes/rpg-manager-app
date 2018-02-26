@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App 1`] = `
+<div
+  className="app"
+>
+  <Header />
+  <Main />
+</div>
+`;

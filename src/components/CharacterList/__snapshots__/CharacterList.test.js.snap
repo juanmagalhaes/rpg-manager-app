@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterList 1`] = `
+<Scrollbars
+  autoHeight={false}
+  autoHeightMax={200}
+  autoHeightMin={0}
+  autoHide={true}
+  autoHideDuration={200}
+  autoHideTimeout={1000}
+  hideTracksWhenNotNeeded={false}
+  renderThumbHorizontal={[Function]}
+  renderThumbVertical={[Function]}
+  renderTrackHorizontal={[Function]}
+  renderTrackVertical={[Function]}
+  renderView={[Function]}
+  tagName="div"
+  thumbMinSize={30}
+  universal={false}
+>
+  <ul
+    className="characterList"
+  >
+    <li
+      key="1"
+    >
+      <Character
+        id={1}
+      />
+    </li>
+    <li
+      key="2"
+    >
+      <Character
+        id={2}
+      />
+    </li>
+    <li
+      key="3"
+    >
+      <Character
+        id={3}
+      />
+    </li>
+    <li
+      key="4"
+    >
+      <Character
+        id={4}
+      />
+    </li>
+  </ul>
+</Scrollbars>
+`;

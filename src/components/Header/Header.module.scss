@@ -1,0 +1,31 @@
+@import "~styles/variables";
+
+.header {
+  font-size: 20px;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    list-style-type: none;
+  }
+  li {
+    float: left;
+    display: list-item;
+
+    a {
+      color: #000;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      padding: $spacer $spacer * 2;
+    }
+  }
+}
+
+li.right {
+  float: right;
+}

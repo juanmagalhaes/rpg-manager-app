@@ -1,0 +1,13 @@
+@import "~styles/variables";
+
+.hideOnSmall {
+  @media screen and (max-width: $break-small) {
+    display: none !important;
+  }
+}
+
+.hideOnMedium {
+  @media screen and (max-width: $break-medium) {
+    display: none !important;
+  }
+}

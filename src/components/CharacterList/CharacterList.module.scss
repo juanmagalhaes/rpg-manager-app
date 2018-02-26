@@ -1,0 +1,15 @@
+@import "~styles/variables";
+
+.characterList {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  padding: $spacer;
+  list-style-type: none;
+  box-sizing: border-box;
+  & > li {
+    padding: $spacer;
+  }
+}

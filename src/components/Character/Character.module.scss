@@ -1,0 +1,26 @@
+@import "~styles/variables";
+
+.character {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid black;
+  &Status {
+    flex: 1;
+    padding: $spacer;
+    & > p {
+      display: flex;
+      margin: 0 0 $spacer / 2;
+    }
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: $spacer;
+    }
+    span {
+      margin-right: $spacer * 2;
+    }
+  }
+  &Player {
+    float: right;
+  }
+}

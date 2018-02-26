@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game 1`] = `
+<section
+  className="game"
+>
+  <Header />
+  <CharacterList />
+</section>
+`;
