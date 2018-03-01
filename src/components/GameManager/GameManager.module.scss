@@ -1,0 +1,37 @@
+@import "~styles/variables";
+
+.gameManager {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .placeholder {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    background: $color4;
+    flex-direction: column;
+  }
+
+  .header {
+    display: flex;
+    color: $color4;
+    padding: $spacer;
+    align-items: center;
+    background: $color1;
+    height: $spacer * 6;
+    box-sizing: border-box;
+    justify-content: space-between;
+    & > h4 {
+      margin: 0;
+    }
+  }
+
+  .form {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}

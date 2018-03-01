@@ -10,6 +10,16 @@ exports[`Main 1`] = `
       exact={true}
       path="/dashboard"
     />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/game"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/game/:id"
+    />
     <Redirect
       from="/"
       push={false}

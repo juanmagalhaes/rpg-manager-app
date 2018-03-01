@@ -3,4 +3,8 @@
 declare module.exports: {|
   +'game': string;
   +'header': string;
+  +'link': string;
+  +'sumary': string;
+  +'sumaryContainer': string;
+  +'sumaryPlaceholder': string;
 |};

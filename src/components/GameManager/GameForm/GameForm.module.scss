@@ -1,0 +1,29 @@
+@import "~styles/variables";
+
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .content {
+    flex: 1 0 auto;
+    padding: 0 $spacer * 3;
+  }
+  .footer {
+    flex-shrink: 0;
+  }
+  .input {
+    color: $color2;
+    margin-bottom: $spacer * 4;
+    @media screen and (max-width: $break-medium) {
+      margin-bottom: $spacer;
+    }
+    @media screen and (max-width: $break-small) {
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    height: 100%;
+    overflow: hidden;
+  }
+}

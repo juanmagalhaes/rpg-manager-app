@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Scrollbars } from "react-custom-scrollbars";
-import Character from "~/components/Character";
+import Character from "~/components/Dashboard/Character";
 import type { Props } from "./types";
 import styles from "./CharacterList.module.scss";
 

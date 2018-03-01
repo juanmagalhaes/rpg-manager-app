@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Scrollbars } from "react-custom-scrollbars";
-import Game from "~/components/Game";
+import Game from "./Game";
 import { getDashboardData } from "./actions";
 import styles from "./Dashboard.module.scss";
 import type { Props } from "./types";

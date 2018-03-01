@@ -6,7 +6,7 @@ import {
   FETCH_DASHBOARD_DATA_SUCCESS,
   FETCH_DASHBOARD_DATA_FAILURE
 } from "./constants";
-import type { Character } from "~/components/Character";
+import type { Character } from "./Character";
 
 export type CharactersByGame = {
   gameId: number,

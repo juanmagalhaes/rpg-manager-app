@@ -5,15 +5,21 @@ exports[`Header 1`] = `
   className="header"
 >
   <ul>
-    <li>
+    <li
+      className="logo"
+    >
       <Logo />
     </li>
     <li
       className="right"
     >
-      <a>
+      <Link
+        className="logo"
+        replace={false}
+        to="/game"
+      >
         New Game
-      </a>
+      </Link>
     </li>
   </ul>
 </nav>

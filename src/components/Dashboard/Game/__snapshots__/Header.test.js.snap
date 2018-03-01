@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header 1`] = `
+<Link
+  className="link"
+  replace={false}
+  to="/game/1"
+>
+  <header
+    className="header"
+  >
+    <h3>
+      Game of Thrones
+    </h3>
+  </header>
+</Link>
+`;

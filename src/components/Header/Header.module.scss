@@ -3,8 +3,7 @@
 .header {
   font-size: 20px;
   box-sizing: border-box;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  background: $color1;
   ul {
     margin: 0;
     padding: 0;
@@ -17,11 +16,19 @@
     display: list-item;
 
     a {
-      color: #000;
-      display: block;
+      color: $color4;
+      display: flex;
+      align-items: center;
       text-align: center;
       text-decoration: none;
-      padding: $spacer $spacer * 2;
+      padding: $spacer * 2 $spacer * 2;
+      @media screen and (max-width: $break-small) {
+        padding: 12px $spacer * 2;
+      }
+    }
+
+    &.logo a {
+      padding: 11px $spacer * 2 12px;
     }
   }
 }

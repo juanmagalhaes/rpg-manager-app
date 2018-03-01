@@ -12,7 +12,7 @@ export default function Character(props: Props) {
   return (
     <section className={styles.character}>
       <Avatar src={props.avatar} />
-      <sumary className={styles.status}>
+      <div className={styles.status}>
         <p className={`${screen.hideOnMedium} ${styles.player}`}>
           <strong>Player</strong>: {props.player}
         </p>
@@ -31,7 +31,7 @@ export default function Character(props: Props) {
           <img alt="Magic Points" src={mana} />
           <span>{props.magicPoints}</span>
         </p>
-      </sumary>
+      </div>
     </section>
   );
 }

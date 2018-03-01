@@ -1,8 +1,17 @@
 // @flow
 
-export type State = {};
+import type {
+  Action as DashboardAction,
+  State as DashboardState
+} from "~/components/Dashboard";
+import type {
+  Action as GameManagerAction,
+  State as GameManagerState
+} from "~/components/GameManager";
 
-export type Action = {};
+export type State = DashboardAction | GameManagerAction;
+
+export type Action = DashboardState | GameManagerState;
 
 /* eslint-disable no-use-before-define */
 

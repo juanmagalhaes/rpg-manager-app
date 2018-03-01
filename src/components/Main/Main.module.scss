@@ -1,4 +1,7 @@
+@import "~styles/variables";
+
 .main {
   height: 100%;
   display: flex;
+  background: $color5;
 }

@@ -7,7 +7,7 @@ exports[`Character 1`] = `
   <Avatar
     src="http://path-to-avatar"
   />
-  <sumary
+  <div
     className="status"
   >
     <p
@@ -53,6 +53,6 @@ exports[`Character 1`] = `
         50
       </span>
     </p>
-  </sumary>
+  </div>
 </section>
 `;

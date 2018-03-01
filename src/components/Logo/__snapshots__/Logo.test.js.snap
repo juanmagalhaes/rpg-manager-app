@@ -1,9 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Logo 1`] = `
-<a
+<Link
   className="logo"
+  replace={false}
+  to="/"
 >
-  RPG Manager
-</a>
+  <img
+    alt="Dice Logo"
+    src="dice-logo.png"
+    styles={
+      Object {
+        "marginRigth": "8px",
+      }
+    }
+  />
+  <strong>
+    RPG Manager
+  </strong>
+</Link>
 `;

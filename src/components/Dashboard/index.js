@@ -9,3 +9,5 @@ export default Loadable({
   loader: () => import("./Dashboard"),
   loading: Loading
 });
+
+export type { Action, State } from "./types";

@@ -2,12 +2,14 @@
 
 .character {
   box-sizing: border-box;
-  border: 1px solid black;
+  border: $border;
+  box-shadow: $box-shadow;
   display: flex;
 
   .status {
     flex: 1;
     padding: $spacer;
+    background: $color4;
     & > p {
       display: flex;
       margin: 0 0 $spacer / 2;
@@ -19,6 +21,10 @@
     }
     span {
       margin-right: $spacer * 2;
+    }
+    p,
+    span {
+      color: $color2;
     }
   }
 }

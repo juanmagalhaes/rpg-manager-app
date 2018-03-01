@@ -1,0 +1,44 @@
+@import "~styles/variables";
+
+.game,
+.sumaryContainer {
+  display: flex;
+  flex-flow: column;
+  background: $color4;
+  height: $spacer * 95;
+  box-sizing: border-box;
+}
+
+.sumaryContainer {
+  height: auto;
+}
+
+.sumary {
+  width: 100%;
+  text-align: justify;
+  padding: $spacer * 3;
+  box-shadow: $box-shadow;
+  background: $transparent1;
+}
+
+.sumaryPlaceholder {
+  padding: 24px;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  display: block;
+  overflow: hidden;
+  padding: $spacer;
+  background: $color1;
+  box-sizing: border-box;
+  & > h3 {
+    margin: 0;
+    color: $color4;
+    display: block;
+  }
+}

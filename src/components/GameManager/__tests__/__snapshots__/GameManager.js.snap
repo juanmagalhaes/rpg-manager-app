@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameManager renders with no path id 1`] = `
+<div
+  className="gameManager"
+>
+  <section
+    className="placeholder"
+  >
+    <div
+      className="form"
+    >
+      <header
+        className="header"
+      >
+        <h4>
+          NEW CAMPAIGN
+        </h4>
+      </header>
+      <GameForm
+        createdAt={null}
+        id={null}
+        name=""
+        onChange={[MockFunction]}
+        onSubmit={[MockFunction]}
+        sumary=""
+      />
+    </div>
+  </section>
+</div>
+`;
+
+exports[`GameManager renders with path id 1`] = `
+<div
+  className="gameManager"
+>
+  <section
+    className="placeholder"
+  >
+    <div
+      className="form"
+    >
+      <header
+        className="header"
+      >
+        <h4>
+          EDIT CAMPAIGN
+        </h4>
+        <IconButton
+          disableTouchRipple={false}
+          disabled={false}
+          hoveredStyle={
+            Object {
+              "background": "rgba(170, 170, 170, 0.13)",
+            }
+          }
+          iconStyle={Object {}}
+          onClick={[Function]}
+          tooltip="Delete this campaign"
+          tooltipPosition="bottom-center"
+          touch={false}
+        >
+          <ActionDelete
+            color="white"
+          />
+        </IconButton>
+      </header>
+      <GameForm
+        createdAt={null}
+        id={1}
+        name=""
+        onChange={[MockFunction]}
+        onSubmit={[MockFunction]}
+        sumary=""
+      />
+    </div>
+  </section>
+</div>
+`;

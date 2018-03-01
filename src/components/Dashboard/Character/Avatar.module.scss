@@ -2,6 +2,7 @@
 
 .defaultAvatar {
   overflow: hidden;
+  background: white;
   position: relative;
   width: $spacer * 15;
   height: $spacer * 15;
@@ -24,6 +25,7 @@
 
 .avatar {
   overflow: hidden;
+  background: white;
   position: relative;
   width: $spacer * 15;
   height: $spacer * 15;
