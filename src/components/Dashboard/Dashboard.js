@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { bindActionCreators } from "redux";
-import { Scrollbars } from "react-custom-scrollbars";
 import Scrollable from "~/components/Scrollable";
 import Game from "./Game";
 import { getDashboardData } from "./actions";

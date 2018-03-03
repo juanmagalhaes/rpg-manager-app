@@ -1,3 +1,1 @@
-web: yarn
-web: yarn build
-web: yarn run serve
+web: yarn build && yarn run serve
