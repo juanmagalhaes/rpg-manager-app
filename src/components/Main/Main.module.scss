@@ -3,5 +3,6 @@
 .main {
   height: 100%;
   display: flex;
-  background: $color5;
+  box-sizing: border-box;
+  background: $light-primary;
 }

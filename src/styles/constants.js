@@ -1,10 +1,14 @@
 // @flow
 
-export const COLOR1 = "#243447";
-export const COLOR2 = "#141d26";
-export const COLOR3 = "rgb(255, 64, 129)";
-//export const COLOR4 = '#ffffff';
-export const COLOR4 = "#ffffff";
-export const COLOR5 = "#e3f4f5";
-export const COLOR6 = "#c51f5d";
+export const PRIMARY = "#607D8B";
+export const DARK_PRIMARY = "#455A64";
+export const LIGHT_PRIMARY = "#CFD8DC";
+export const SECONDARY = "#FAFAFA";
+export const TEXT_ICONS = "#FFFFFF";
+export const PRIMARY_TEXT = "#212121";
+export const SECONDARY_TEXT = "#757575";
+export const ACCENT = "#03A9F4";
+export const DIVIDER = "#BDBDBD";
+export const SUCCESS = "#009688";
+export const DANGER = "#FF5252";
 export const TRANSPARENT1 = "rgba(170, 170, 170, 0.13)";

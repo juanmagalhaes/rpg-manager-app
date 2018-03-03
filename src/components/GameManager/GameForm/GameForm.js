@@ -3,10 +3,12 @@
 import React from "react";
 import TextField from "material-ui/TextField";
 import DatePicker from "material-ui/DatePicker";
-import RaisedButton from "material-ui/RaisedButton";
+import CheckIcon from "material-ui/svg-icons/navigation/check";
+import EditIcon from "material-ui/svg-icons/editor/mode-edit";
+import FloatingActionButton from "material-ui/FloatingActionButton";
 import UAParser from "ua-parser-js";
 import styles from "./GameForm.module.scss";
-import { COLOR1, COLOR6, COLOR4 } from "~/styles/constants";
+import { ACCENT, SUCCESS } from "~/styles/constants";
 import type { GameFormProps as Props } from "./types";
 
 const parser = new UAParser();
@@ -14,8 +16,8 @@ const { type } = parser.getDevice();
 const mobile = type === "mobile";
 
 const muiStyles = {
-  underlineFocus: { borderColor: COLOR1 },
-  label: { color: COLOR1 },
+  underlineFocus: { borderColor: ACCENT },
+  label: { color: ACCENT },
   button: {
     margin: 0,
     top: "auto",
@@ -79,15 +81,13 @@ export default function GameForm(props: Props) {
             hintText={!props.sumary ? "What is this game about?" : ""}
           />
         </div>
-        <div className={styles.footer}>
-          <RaisedButton
-            fullWidth
-            type="submit"
-            labelColor={COLOR4}
-            label={props.id ? "Edit Campaign" : "Save Campaign"}
-            backgroundColor={COLOR6}
-          />
-        </div>
+        <FloatingActionButton
+          type="submit"
+          style={muiStyles.button}
+          backgroundColor={props.id ? SUCCESS : ACCENT}
+        >
+          {props.id ? <EditIcon /> : <CheckIcon />}
+        </FloatingActionButton>
       </form>
     </div>
   );

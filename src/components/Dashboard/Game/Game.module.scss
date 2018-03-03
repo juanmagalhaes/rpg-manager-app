@@ -1,11 +1,14 @@
 @import "~styles/variables";
 
+.game {
+  box-shadow: $box-shadow;
+}
+
 .game,
 .sumaryContainer {
   display: flex;
   flex-flow: column;
-  background: $color4;
-  height: $spacer * 95;
+  background: $secondary;
   box-sizing: border-box;
 }
 
@@ -15,15 +18,26 @@
 
 .sumary {
   width: 100%;
+  font-style: italic;
   text-align: justify;
   padding: $spacer * 3;
-  box-shadow: $box-shadow;
-  background: $transparent1;
+  color: $secondary-text;
+  box-sizing: border-box;
+  border-radius: $spacer;
+  background: $light-primary;
 }
 
 .sumaryPlaceholder {
+  width: 100%;
   padding: 24px;
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+  h4 {
+    margin: $spacer 0;
+    color: $primary-text;
+  }
 }
 
 .link {
@@ -31,14 +45,15 @@
 }
 
 .header {
-  display: block;
-  overflow: hidden;
-  padding: $spacer;
-  background: $color1;
+  display: flex;
+  padding: 0 $spacer * 2;
+  align-items: center;
+  justify-content: space-between;
+  background: $dark-primary;
   box-sizing: border-box;
   & > h3 {
     margin: 0;
-    color: $color4;
+    color: $text-icons;
     display: block;
   }
 }

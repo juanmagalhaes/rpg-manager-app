@@ -1,0 +1,30 @@
+@import "~styles/variables";
+
+.characterManager {
+  width: 100%;
+  display: flex;
+  top: - $spacer * 15;
+  position: relative;
+  padding: $spacer * 4;
+  @media screen and (max-width: $break-medium) {
+    padding: 0;
+    top: 0 - $spacer * 5;
+    height: calc(100% + #{$spacer * 6});
+  }
+  .formContainer {
+    flex: 1;
+    flex-grow: 1;
+    background: $secondary;
+    margin-bottom: $spacer;
+    box-shadow: $box-shadow;
+  }
+
+  .characterListContainer {
+    flex: 1;
+    margin-bottom: $spacer;
+    padding: $spacer * 5 0;
+    @media screen and (max-width: $break-medium) {
+      display: none;
+    }
+  }
+}

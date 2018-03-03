@@ -1,26 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header 1`] = `
-<nav
-  className="header"
->
-  <ul>
-    <li
-      className="logo"
-    >
-      <Logo />
-    </li>
-    <li
-      className="right"
-    >
-      <Link
-        className="logo"
-        replace={false}
-        to="/game"
-      >
-        New Game
-      </Link>
-    </li>
-  </ul>
-</nav>
+<Route
+  render={[Function]}
+/>
 `;

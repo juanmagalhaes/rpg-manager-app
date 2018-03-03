@@ -1,15 +1,18 @@
 @import "~styles/variables";
 
+.card {
+  text-decoration: none;
+}
 .character {
+  cursor: pointer;
   box-sizing: border-box;
-  border: $border;
   box-shadow: $box-shadow;
   display: flex;
 
   .status {
     flex: 1;
     padding: $spacer;
-    background: $color4;
+    background: $text-icons;
     & > p {
       display: flex;
       margin: 0 0 $spacer / 2;
@@ -24,11 +27,11 @@
     }
     p,
     span {
-      color: $color2;
+      color: $primary-text;
     }
   }
 }
 
-.player {
+.right {
   float: right;
 }

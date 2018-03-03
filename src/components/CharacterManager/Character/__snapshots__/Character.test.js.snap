@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character 1`] = `
+<Link
+  className="card"
+  replace={false}
+  to="/game/1/character/1"
+>
+  <section
+    className="character"
+  >
+    <Avatar
+      src="http://path-to-avatar"
+    />
+    <div
+      className="status"
+    >
+      <p
+        className="right"
+      >
+        <strong>
+          Player
+        </strong>
+        : 
+        Bruce Waine
+      </p>
+      <p>
+        <strong>
+          Batman
+        </strong>
+      </p>
+      <p>
+        Rogue
+        , Lv: 
+        20
+      </p>
+      <p>
+        Human
+        , 
+        10
+         years old
+      </p>
+      <p
+        className="hideOnSmall"
+      >
+        <img
+          alt="Health Points"
+          src="health2.png"
+        />
+        <span>
+          200
+        </span>
+        <img
+          alt="Magic Points"
+          src="mana2.png"
+        />
+        <span>
+          50
+        </span>
+      </p>
+    </div>
+  </section>
+</Link>
+`;

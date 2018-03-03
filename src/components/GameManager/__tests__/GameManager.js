@@ -22,16 +22,6 @@ test("GameManager renders with no path id", () => {
   expect(props.getGame).not.toHaveBeenCalled();
 });
 
-test("GameManager renders with path id", () => {
-  const newProps = {
-    ...props,
-    match: { params: { id: 1 } }
-  };
-  const component = shallow(<GameManager {...newProps} />);
-  expect(component).toMatchSnapshot();
-  expect(props.getGame).toHaveBeenCalledWith(1);
-});
-
 test("GameManager listen to route changes and calls newGame", () => {
   const component = shallow(<GameManager {...props} />);
   const { listen } = props.history;

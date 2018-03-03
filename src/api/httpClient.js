@@ -1,3 +1,6 @@
+const SERVER_URL = process.env.SERVER_URL || "";
+const API_URL = `http://${SERVER_URL}/api`;
+
 const baseConfig = {
   mode: "cors",
   headers: new Headers({
@@ -8,7 +11,7 @@ const baseConfig = {
 
 function requestWithBody({ method }) {
   return async (url, body) => {
-    const result = await fetch(url, {
+    const result = await fetch(`${API_URL}/${url}`, {
       ...baseConfig,
       method,
       body: JSON.stringify(body)
@@ -18,11 +21,11 @@ function requestWithBody({ method }) {
 }
 
 export const get = async url => {
-  const result = await fetch(url, baseConfig);
+  const result = await fetch(`${API_URL}/${url}`, baseConfig);
   return await result.json();
 };
 export const remove = async url => {
-  return await fetch(url, {
+  return await fetch(`${API_URL}/${url}`, {
     ...baseConfig,
     method: "DELETE"
   });

@@ -3,21 +3,26 @@
 .header {
   font-size: 20px;
   box-sizing: border-box;
-  background: $color1;
+  background: $primary;
+  height: $spacer * 50;
+  display: flex;
+  flex-direction: column;
   ul {
     margin: 0;
     padding: 0;
     display: block;
     overflow: hidden;
     list-style-type: none;
+    background: $dark-primary;
   }
   li {
     float: left;
     display: list-item;
 
     a {
-      color: $color4;
       display: flex;
+      font-weight: bold;
+      color: $text-icons;
       align-items: center;
       text-align: center;
       text-decoration: none;
@@ -35,4 +40,18 @@
 
 li.right {
   float: right;
+}
+
+.subHeader {
+  top: 12%;
+  position: absolute;
+  margin-left: $spacer * 7;
+  @media screen and (max-width: $break-medium) {
+    top: 16%;
+  }
+}
+.subHeaderContainer {
+  flex: 1;
+  color: $text-icons;
+  padding: $spacer * 3;
 }

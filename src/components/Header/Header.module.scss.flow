@@ -4,4 +4,6 @@ declare module.exports: {|
   +'header': string;
   +'logo': string;
   +'right': string;
+  +'subHeader': string;
+  +'subHeaderContainer': string;
 |};

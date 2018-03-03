@@ -13,12 +13,12 @@ exports[`Main 1`] = `
     <Route
       component={[Function]}
       exact={true}
-      path="/game"
+      path="/game/:gameId?"
     />
     <Route
       component={[Function]}
       exact={true}
-      path="/game/:id"
+      path="/game/:gameId/character/:characterId?"
     />
     <Redirect
       from="/"

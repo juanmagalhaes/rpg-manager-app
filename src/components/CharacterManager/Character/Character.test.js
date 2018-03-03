@@ -4,7 +4,7 @@ import Character from "./Character";
 const character = {
   age: 10,
   avatar: "http://path-to-avatar",
-  className: "Rogue",
+  characterClass: "Rogue",
   gameId: 1,
   healthPoints: 200,
   id: 1,

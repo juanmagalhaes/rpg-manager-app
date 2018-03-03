@@ -3,7 +3,7 @@
 export type Character = {
   age: number,
   avatar: string,
-  className: string,
+  characterClass: string,
   gameId: number,
   healthPoints: number,
   id: number,

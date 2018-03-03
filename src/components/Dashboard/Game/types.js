@@ -1,6 +1,6 @@
 // @flow
 
-import type { Character } from "../Character";
+import type { Character } from "~/components/CharacterManager";
 import type { RouterInjectedProps } from "~/types/router";
 
 export type GameContainer = {
@@ -9,12 +9,13 @@ export type GameContainer = {
   gameId: number
 };
 
-export type HeaderProps = {
+export type HeaderProps = RouterInjectedProps & {
   gameName: string,
   gameId: number
 };
 
 export type SumaryProps = {
+  gameId: number,
   text: string
 };
 

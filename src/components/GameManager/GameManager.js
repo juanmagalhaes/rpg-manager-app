@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import ContentDelete from "material-ui/svg-icons/action/delete";
+import DeleteIcon from "material-ui/svg-icons/action/delete";
 import IconButton from "material-ui/IconButton";
 import GameForm from "./GameForm";
 import {
@@ -14,8 +14,8 @@ import {
   newGame,
   deleteGame
 } from "./actions";
-import { TRANSPARENT1 } from "~/styles/constants";
 import styles from "./GameManager.module.scss";
+import { TEXT_ICONS, TRANSPARENT1 } from "~/styles/constants";
 import type { GameManagerProps as Props } from "./types";
 
 export class GameManager extends Component<Props, { tab: string }> {
@@ -29,8 +29,8 @@ export class GameManager extends Component<Props, { tab: string }> {
 
   componentDidMount() {
     const { match, getGame } = this.props;
-    if (match.params.id) {
-      getGame(match.params.id);
+    if (match.params.gameId) {
+      getGame(match.params.gameId);
     }
 
     this.unlisten = this.props.history.listen(_ => {
@@ -41,31 +41,31 @@ export class GameManager extends Component<Props, { tab: string }> {
   render() {
     const { match, ...rest } = this.props;
     const { params } = match;
-    const { id } = params;
+    const { gameId } = params;
 
     return (
       <div className={styles.gameManager}>
         <section className={styles.placeholder}>
           <div className={styles.form}>
             <header className={styles.header}>
-              <h4>{id ? "EDIT CAMPAIGN" : "NEW CAMPAIGN"}</h4>
-              {id && (
+              <h3>{gameId ? "EDIT CAMPAIGN" : "NEW CAMPAIGN"}</h3>
+              {gameId && (
                 <IconButton
                   hoveredStyle={{ background: TRANSPARENT1 }}
                   tooltip="Delete this campaign"
                   onClick={() => {
-                    rest.deleteGame(id);
+                    rest.deleteGame(gameId);
                   }}
                 >
-                  <ContentDelete color="white" />
+                  <DeleteIcon color={TEXT_ICONS} />
                 </IconButton>
               )}
             </header>
             <GameForm
               {...rest.game}
-              id={id}
+              id={gameId}
               onChange={rest.changeGame}
-              onSubmit={id ? rest.updateGame : rest.saveGame}
+              onSubmit={gameId ? rest.updateGame : rest.saveGame}
             />
           </div>
         </section>

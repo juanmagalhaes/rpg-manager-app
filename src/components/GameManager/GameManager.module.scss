@@ -3,28 +3,34 @@
 .gameManager {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  top: -120px;
+  position: relative;
+  padding: $spacer * 4;
+  @media screen and (max-width: $break-medium) {
+    top: 0;
+    padding: 0;
+  }
 
   .placeholder {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
-    background: $color4;
+    background: $secondary;
     flex-direction: column;
+    box-shadow: $box-shadow;
   }
 
   .header {
     display: flex;
-    color: $color4;
-    padding: $spacer;
+    padding: $spacer * 3;
     align-items: center;
-    background: $color1;
+    background: #455a64;
     height: $spacer * 6;
     box-sizing: border-box;
     justify-content: space-between;
-    & > h4 {
+    & > h3 {
       margin: 0;
+      color: $text-icons;
     }
   }
 
