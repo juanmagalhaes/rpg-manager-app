@@ -1,5 +1,5 @@
 const SERVER_URL = process.env.SERVER_URL || "";
-const API_URL = `http://${SERVER_URL}/api`;
+const API_URL = `${SERVER_URL}/api`;
 
 const baseConfig = {
   mode: "cors",
