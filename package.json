@@ -24,9 +24,7 @@
     "redux-promise-middleware": "5.0.0",
     "redux-thunk": "2.2.0",
     "typeface-roboto": "0.0.54",
-    "ua-parser-js": "0.7.17"
-  },
-  "devDependencies": {
+    "ua-parser-js": "0.7.17",
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
