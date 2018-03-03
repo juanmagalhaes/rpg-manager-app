@@ -35,6 +35,20 @@
 ```
 
 ```
-  # Build for deploy
+  # Build for production deploy
   $ yarn build
 ```
+
+## Instructions to run it with docker
+
+You need to have docker and docker-compose installed and then run:
+
+```
+  $ docker-compose up
+```
+
+And all just works. Hope you enjoy!
+
+Bellow is the production link to the client app running on heroku free servers:
+
+[production rpg-manager](https://rpg-manager.herokuapp.com/api/character/)
