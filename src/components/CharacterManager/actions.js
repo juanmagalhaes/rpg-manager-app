@@ -64,7 +64,7 @@ export const getCharacter = createAction(
 export const saveCharacter = createAction(SAVE_CHARACTER, async character => {
   try {
     const result = await client.saveCharacter(character);
-    history.push(`/game/${result.game}/character/${result.id}`);
+    history.push("/dashboard");
     history.go();
     return result;
   } catch (error) {

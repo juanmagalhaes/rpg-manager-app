@@ -34,7 +34,7 @@ export function Header({ history, location }: RouterInjectedProps) {
         {!location.pathname.includes("dashboard") && (
           <IconButton
             hoveredStyle={{ background: TRANSPARENT1 }}
-            onClick={() => history.goBack()}
+            onClick={() => history.push("/dashboard")}
           >
             <BackIcon color={TEXT_ICONS} />
           </IconButton>

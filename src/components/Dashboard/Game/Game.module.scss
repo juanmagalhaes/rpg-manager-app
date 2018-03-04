@@ -1,6 +1,7 @@
 @import "~styles/variables";
 
 .game {
+  height: $spacer * 50;
   box-shadow: $box-shadow;
 }
 

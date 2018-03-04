@@ -31,9 +31,10 @@ export const getGame = createAction(
 
 export const saveGame = createAction(SAVE_GAME, async game => {
   try {
-    const { id } = await client.saveGame(game);
-    history.push(`/game/${id}`);
+    const result = await client.saveGame(game);
+    history.push("/dashboard");
     history.go();
+    return result;
   } catch (error) {
     console.error(error);
   }
